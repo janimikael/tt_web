@@ -31,7 +31,7 @@
 }
 
 .section {
-  position: fixed;
+  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -145,6 +145,7 @@
 }
 
 .font.text.fc_valkoinen.teksti_keskelle {
+  margin-bottom: 50px;
   line-height: 1.5em;
   text-align: center;
 }
@@ -171,6 +172,10 @@
 
 .font.h2 {
   font-size: 40px;
+}
+
+.font.h2.fc_vaalea.team {
+  opacity: 0;
 }
 
 .font.h2.fc_valkoinen.tt_yla {
@@ -326,11 +331,12 @@
 
 .w_400.font.text.fc_vaalea.teksti_keskelle.lisa {
   margin-top: -20px;
+  opacity: 0;
 }
 
 .body {
   display: block;
-  height: 4000px;
+  height: 200vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -349,7 +355,7 @@
 }
 
 .section-4 {
-  position: fixed;
+  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -377,9 +383,13 @@
   grid-template-areas: "Area";
   -ms-grid-columns: 300px 50px 300px 50px 300px;
   grid-template-columns: 300px 300px 300px;
-  -ms-grid-rows: auto 20px minmax(162px, 1fr);
-  grid-template-rows: auto minmax(162px, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
   white-space: normal;
+}
+
+.problem_h {
+  margin-bottom: 10px;
 }
 
 .div-block-4 {
@@ -411,7 +421,8 @@
   display: -ms-flexbox;
   display: flex;
   height: 100px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -434,7 +445,7 @@
   display: flex;
   height: auto;
   max-width: 550px;
-  margin-top: 20px;
+  margin-top: 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -510,9 +521,197 @@
   align-items: flex-start;
 }
 
+.image-2 {
+  opacity: 0;
+}
+
+.paa_section {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.div-block-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-block-11 {
+  height: 100vh;
+}
+
+.div_ps_pic {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.image-3 {
+  height: 70px;
+}
+
 @media screen and (max-width: 991px) {
   .div-block-3 {
     margin-top: 200px;
+  }
+
+  .body {
+    height: 350vh;
+  }
+
+  .grid-3 {
+    height: auto;
+    grid-template-areas: ".";
+    -ms-grid-columns: 300px;
+    grid-template-columns: 300px;
+    -ms-grid-rows: auto minmax(162px, 1fr) auto;
+    grid-template-rows: auto minmax(162px, 1fr) auto;
+  }
+
+  .div-block-4 {
+    height: auto;
+  }
+
+  .div-block-11.tumma_tausta {
+    height: 250vh;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .font.bold {
+    font-size: 16px;
+  }
+
+  .font.h1 {
+    font-size: 40px;
+  }
+
+  .font.text {
+    font-size: 16px;
+  }
+
+  .font.h2 {
+    font-size: 32px;
+  }
+
+  .text-block-2.font.text.fc_tumma {
+    width: auto;
+    max-width: 500px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .div4 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .w_400.font.text.fc_vaalea.teksti_keskelle.lisa {
+    width: auto;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .font.text.fc_valkoinen {
+    text-align: center;
+  }
+
+  .font.h2.fc_vaalea.team {
+    display: block;
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .font.h2.fc_valkoinen {
+    text-align: center;
+  }
+
+  .font.h2.fc_valkoinen.tt_yla {
+    width: auto;
+    max-width: 100px;
+    text-align: center;
+  }
+
+  .font.tt_logo.fc_tumma.tt_logo_left {
+    width: 112px;
+    height: 200px;
+    font-size: 200px;
+  }
+
+  .font.tt_logo.fc_tumma.tt_logo_right {
+    width: 112px;
+    height: 200px;
+    font-size: 200px;
+  }
+
+  .div4 {
+    margin-top: -200px;
+  }
+
+  .body {
+    height: 280vh;
+  }
+
+  .grid-3 {
+    -ms-grid-columns: minmax(100px, 300px);
+    grid-template-columns: minmax(100px, 300px);
+  }
+
+  .div-block-5 {
+    width: auto;
+  }
+
+  .div-block-11.tumma_tausta {
+    width: auto;
+    height: 180vh;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
