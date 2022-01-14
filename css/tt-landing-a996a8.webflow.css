@@ -579,12 +579,27 @@
 }
 
 @media screen and (max-width: 991px) {
+  .font.h2.fc_vaalea.team {
+    opacity: 0;
+  }
+
+  .font.h2.fc_valkoinen.tt_yla {
+    margin-top: 20px;
+  }
+
   .div-block-3 {
-    margin-top: 200px;
+    margin-top: 50px;
+  }
+
+  .div4 {
+    position: static;
+    margin-top: 0px;
+    margin-bottom: 300px;
   }
 
   .body {
-    height: 350vh;
+    height: auto;
+    min-height: auto;
   }
 
   .grid-3 {
@@ -600,8 +615,23 @@
     height: auto;
   }
 
+  .div-block-6 {
+    margin-bottom: 100px;
+  }
+
+  .paa_section {
+    position: static;
+    height: auto;
+  }
+
+  .div-block-10 {
+    height: auto;
+    min-height: 100vh;
+  }
+
   .div-block-11.tumma_tausta {
-    height: 250vh;
+    height: auto;
+    min-height: 100vh;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -673,8 +703,7 @@
   }
 
   .font.h2.fc_valkoinen.tt_yla {
-    width: auto;
-    max-width: 100px;
+    width: 100vw;
     text-align: center;
   }
 
@@ -691,7 +720,7 @@
   }
 
   .div4 {
-    margin-top: -200px;
+    margin-top: 0px;
   }
 
   .body {
@@ -709,7 +738,7 @@
 
   .div-block-11.tumma_tausta {
     width: auto;
-    height: 180vh;
+    height: auto;
     padding-right: 10px;
     padding-left: 10px;
   }
